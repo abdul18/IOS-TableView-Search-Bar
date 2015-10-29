@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		A7E428581BE0DFC1001AB41F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E428571BE0DFC1001AB41F /* AppDelegate.swift */; };
-		A7E4285A1BE0DFC1001AB41F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E428591BE0DFC1001AB41F /* ViewController.swift */; };
 		A7E4285D1BE0DFC1001AB41F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7E4285B1BE0DFC1001AB41F /* Main.storyboard */; };
 		A7E4285F1BE0DFC1001AB41F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7E4285E1BE0DFC1001AB41F /* Images.xcassets */; };
 		A7E428621BE0DFC1001AB41F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7E428601BE0DFC1001AB41F /* LaunchScreen.xib */; };
 		A7E4286E1BE0DFC1001AB41F /* tableViewSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E4286D1BE0DFC1001AB41F /* tableViewSearchTests.swift */; };
+		A7E428781BE1066B001AB41F /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E428771BE1066B001AB41F /* SearchTableViewController.swift */; };
+		A7E49F1F1BE21E1300F67BE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E49F1E1BE21E1300F67BE2 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,14 @@
 		A7E428521BE0DFC1001AB41F /* tableViewSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tableViewSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7E428561BE0DFC1001AB41F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7E428571BE0DFC1001AB41F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A7E428591BE0DFC1001AB41F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A7E4285C1BE0DFC1001AB41F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7E4285E1BE0DFC1001AB41F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A7E428611BE0DFC1001AB41F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A7E428671BE0DFC1001AB41F /* tableViewSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tableViewSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7E4286C1BE0DFC1001AB41F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7E4286D1BE0DFC1001AB41F /* tableViewSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewSearchTests.swift; sourceTree = "<group>"; };
+		A7E428771BE1066B001AB41F /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		A7E49F1E1BE21E1300F67BE2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +80,9 @@
 			isa = PBXGroup;
 			children = (
 				A7E428571BE0DFC1001AB41F /* AppDelegate.swift */,
-				A7E428591BE0DFC1001AB41F /* ViewController.swift */,
 				A7E4285B1BE0DFC1001AB41F /* Main.storyboard */,
+				A7E49F1E1BE21E1300F67BE2 /* ViewController.swift */,
+				A7E428771BE1066B001AB41F /* SearchTableViewController.swift */,
 				A7E4285E1BE0DFC1001AB41F /* Images.xcassets */,
 				A7E428601BE0DFC1001AB41F /* LaunchScreen.xib */,
 				A7E428551BE0DFC1001AB41F /* Supporting Files */,
@@ -212,7 +215,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7E4285A1BE0DFC1001AB41F /* ViewController.swift in Sources */,
+				A7E49F1F1BE21E1300F67BE2 /* ViewController.swift in Sources */,
+				A7E428781BE1066B001AB41F /* SearchTableViewController.swift in Sources */,
 				A7E428581BE0DFC1001AB41F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +415,7 @@
 				A7E428731BE0DFC1001AB41F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A7E428741BE0DFC1001AB41F /* Build configuration list for PBXNativeTarget "tableViewSearchTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				A7E428761BE0DFC1001AB41F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
